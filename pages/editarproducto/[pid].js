@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react'
 import { useRouter } from 'next/router';
 import { useFormik } from 'formik';
+import { ExclamationCircleIcon } from '@heroicons/react/outline';
 import * as Yup from 'yup'
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
@@ -9,6 +10,7 @@ import { useMutation, useQuery } from '@apollo/client';
 import { OBTENER_PRODUCTO } from '../../config/querys';
 import { AlertaContext } from '../../context/alertas/AlertaState';
 import { ACTUALIZAR_PRODUCTO } from '../../config/mutations';
+import ErrorPage from '../../components/ErrorPage';
 
 const EditarProducto = () => {
     const router = useRouter();
