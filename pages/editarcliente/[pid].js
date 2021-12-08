@@ -30,11 +30,11 @@ const EditarCliente = () => {
         }
     });
 
-    useEffect(() => {
-        return () => {
-            ocultarMensajeError();
-        }
-    }, [ocultarMensajeError])
+//     useEffect(() => {
+//         return () => {
+//             ocultarMensajeError();
+//         }
+//     }, [ocultarMensajeError])
     
     const formik = useFormik({
         initialValues: {
